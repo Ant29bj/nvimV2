@@ -33,7 +33,6 @@ local opts = { noremap = true, silent = true, buffer = bufnr }
   keymap.set("n", "<leader>o", "<cmd>LSoutlineToggle<CR>", opts)
 
 
-
   if client.name == "tsserver" then
     keymap.set("n", "<leader>rf", ":TypescriptRenameFile<CR>") 
     keymap.set("n", "<leader>oi", ":TypescriptOrganizeImports<CR>") 

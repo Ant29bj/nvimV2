@@ -20,3 +20,4 @@ keymap.set('n','<leader>h',':BufferPrev<CR>')
 keymap.set('n','<S-l>',':BufferMoveNext<CR>')
 keymap.set('n','<S-h>' ,':BufferMovePrev<CR>')
 keymap.set('n','<S-c>',':BufferDelete<CR>')
+
