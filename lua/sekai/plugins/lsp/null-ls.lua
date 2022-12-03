@@ -8,7 +8,6 @@ null_ls.setup({
         null_ls.builtins.formatting.goimports,         
         null_ls.builtins.formatting.black,         
         null_ls.builtins.formatting.clang_format,        
-        null_ls.builtins.completion.spell,
         null_ls.builtins.diagnostics.eslint,
         null_ls.builtins.diagnostics.golangci_lint,
     },

@@ -1,8 +1,7 @@
 vim.cmd([[
   augroup packer_user_config
     autocmd!
-    autocmd BufWritePost plugins.lua source <afile> | PackerCompile
-  augroup end
+    autocmd BufWritePost plugins.lua source <afile> | PackerCompile augroup end
 ]])
 
 --Bootstraping 
@@ -23,6 +22,7 @@ return require('packer').startup(function(use)
   use 'wbthomason/packer.nvim'
   --Colorscheme
   use 'morhetz/gruvbox'
+  use 'navarasu/onedark.nvim'
   --Buffer navigation
   use 'christoomey/vim-tmux-navigator'
   --Nvim Tree an icons 
@@ -57,6 +57,8 @@ return require('packer').startup(function(use)
  use 'jose-elias-alvarez/typescript.nvim'
  use 'onsails/lspkind.nvim'
  use 'MunifTanjim/prettier.nvim'
+  -- Java 
+ use 'mfussenegger/nvim-jdtls'
   -- tabs 
  use {'romgrk/barbar.nvim', wants = 'nvim-web-devicons'}
 
@@ -65,6 +67,8 @@ return require('packer').startup(function(use)
   use 'nvim-treesitter/nvim-treesitter'
   use 'windwp/nvim-autopairs'  
   use "p00f/nvim-ts-rainbow"
+
+-- lsp 
 
   if packer_bootstrap then
     require('packer').sync()

@@ -14,6 +14,7 @@ mason_lspconfig.setup({
   ensure_installed = {
     "tsserver",
     "html",
+    "eslint",
     "clangd",
     "gopls",
     "cssls",
