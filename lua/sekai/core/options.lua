@@ -1,6 +1,5 @@
-local opt = vim.opt 
+local opt = vim.opt
 
--- line number
 opt.relativenumber = true
 opt.number = true
 

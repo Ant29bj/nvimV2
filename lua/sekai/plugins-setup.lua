@@ -22,6 +22,7 @@ return require("packer").startup(function(use)
 	use("wbthomason/packer.nvim")
 	--Colorscheme
 	use("morhetz/gruvbox")
+	use("olimorris/onedarkpro.nvim") -- Packer
 	use("navarasu/onedark.nvim")
 	-- Transparent
 	use("xiyaowong/nvim-transparent")
@@ -55,6 +56,8 @@ return require("packer").startup(function(use)
 		"williamboman/mason-lspconfig.nvim",
 		"neovim/nvim-lspconfig",
 	})
+	-- aoutopairs
+	use("windwp/nvim-autopairs")
 	use("hrsh7th/cmp-nvim-lsp")
 	use({ "glepnir/lspsaga.nvim", branch = "main" })
 	use("jose-elias-alvarez/typescript.nvim")
@@ -65,12 +68,12 @@ return require("packer").startup(function(use)
 	use("mfussenegger/nvim-jdtls")
 	-- tabs
 	use({ "romgrk/barbar.nvim", wants = "nvim-web-devicons" })
-
+	-- Higlights
 	use("jose-elias-alvarez/null-ls.nvim")
 	use("jayp0521/mason-null-ls.nvim")
 	use("nvim-treesitter/nvim-treesitter")
-	use("windwp/nvim-autopairs")
 	use("p00f/nvim-ts-rainbow")
+	use("norcalli/nvim-colorizer.lua")
 
 	if packer_bootstrap then
 		require("packer").sync()

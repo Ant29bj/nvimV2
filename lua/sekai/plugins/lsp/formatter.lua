@@ -1,4 +1,5 @@
 local util = require("formatter.util")
+local defaults = require("formatter.defaults")
 require("formatter").setup({
 	logging = true,
 	log_level = vim.log.levels.WARN,
@@ -63,7 +64,7 @@ require("formatter").setup({
 				}
 			end,
 		},
-		prettier = {
+	  prettier = {
 			function()
 				return {
 					exe = "prettier",
@@ -78,8 +79,19 @@ require("formatter").setup({
 				}
 			end,
 		},
+		jq = {
+			-- Json formatter
+			function()
+				return {
+					exe = "jq",
+					args = { "." },
+					stdin = true,
+				}
+			end,
+		},
 		["*"] = {
 			require("formatter.filetypes.any").remove_trailing_whitespace,
 		},
 	},
 })
+

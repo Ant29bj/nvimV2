@@ -11,6 +11,7 @@ mason.setup()
 
 mason_lspconfig.setup({
 	ensure_installed = {
+		-- Lsp Servers
 		"tsserver",
 		"html",
 		"eslint",
@@ -23,4 +24,3 @@ mason_lspconfig.setup({
 	},
 	automatic_installation = true,
 })
-
