@@ -16,8 +16,7 @@ end
 
 local keymap = vim.keymap
 
-local on_attach = function(client, bufnr)
-local opts = { noremap = true, silent = true, buffer = bufnr }
+local on_attach = function(client, bufnr) local opts = { noremap = true, silent = true, buffer = bufnr }
 
   keymap.set("n", "gf", "<cmd>Lspsaga lsp_finder<CR>", opts)
   keymap.set("n", "gD", "<Cmd>lua vim.lsp.buf.declaration()<CR>", opts) 
@@ -59,7 +58,6 @@ lspconfig["html"].setup({
   capabilities = capabilities,
   on_attach = on_attach,
 })
-
 
 typescript.setup({
   server ={
