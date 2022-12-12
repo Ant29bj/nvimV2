@@ -32,6 +32,12 @@ require("formatter").setup({
 					stdin = true,
 				}
 			end,
+			function()
+				return {
+					exe = "gofumpt",
+					stdin = true,
+				}
+			end,
 		},
 		c = {
 			function()
@@ -64,7 +70,7 @@ require("formatter").setup({
 				}
 			end,
 		},
-	  prettier = {
+		prettier = {
 			function()
 				return {
 					exe = "prettier",
@@ -94,4 +100,3 @@ require("formatter").setup({
 		},
 	},
 })
-

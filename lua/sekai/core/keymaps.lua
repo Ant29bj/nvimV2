@@ -20,6 +20,9 @@ keymap.set("n", "<leader>h", ":BufferPrev<CR>")
 keymap.set("n", "<S-l>", ":BufferMoveNext<CR>")
 keymap.set("n", "<S-h>", ":BufferMovePrev<CR>")
 keymap.set("n", "<S-c>", ":BufferDelete<CR>")
+-- Buffer 
+keymap.set("n","<A-h>",":SmartResizeLeft<CR>")
+keymap.set("n","<A-l>",":SmartResizeRight<CR>")
 -- Format
 keymap.set("n", "<leader>f", ":Format<CR>")
 -- Transparent 

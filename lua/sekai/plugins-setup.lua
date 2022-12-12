@@ -68,6 +68,8 @@ return require("packer").startup(function(use)
 	use("mfussenegger/nvim-jdtls")
 	-- tabs
 	use({ "romgrk/barbar.nvim", wants = "nvim-web-devicons" })
+	-- Buffers
+	use("mrjones2014/smart-splits.nvim")
 	-- Higlights
 	use("jose-elias-alvarez/null-ls.nvim")
 	use("jayp0521/mason-null-ls.nvim")
