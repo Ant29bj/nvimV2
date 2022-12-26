@@ -58,6 +58,7 @@ return require("packer").startup(function(use)
 	})
 	-- aoutopairs
 	use("windwp/nvim-autopairs")
+
 	use("hrsh7th/cmp-nvim-lsp")
 	use({ "glepnir/lspsaga.nvim", branch = "main" })
 	use("jose-elias-alvarez/typescript.nvim")
@@ -76,6 +77,8 @@ return require("packer").startup(function(use)
 	use("nvim-treesitter/nvim-treesitter")
 	use("p00f/nvim-ts-rainbow")
 	use("norcalli/nvim-colorizer.lua")
+
+  use('brenoprata10/nvim-highlight-colors')
 
 	if packer_bootstrap then
 		require("packer").sync()
