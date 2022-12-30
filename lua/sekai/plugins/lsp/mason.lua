@@ -21,6 +21,9 @@ mason_lspconfig.setup({
 		"pyright",
 		"rust_analyzer",
 		"angularls",
+		"emmet_ls",
+		"jdtls",
+		"sumneko_lua",
 	},
 	automatic_installation = true,
 })

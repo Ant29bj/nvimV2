@@ -85,7 +85,7 @@ require("formatter").setup({
 				}
 			end,
 		},
-		jq = {
+		json = {
 			-- Json formatter
 			function()
 				return {

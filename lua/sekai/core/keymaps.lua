@@ -20,10 +20,20 @@ keymap.set("n", "<leader>h", ":BufferPrev<CR>")
 keymap.set("n", "<S-l>", ":BufferMoveNext<CR>")
 keymap.set("n", "<S-h>", ":BufferMovePrev<CR>")
 keymap.set("n", "<S-c>", ":BufferDelete<CR>")
--- Buffer 
-keymap.set("n","<A-h>",":SmartResizeLeft<CR>")
-keymap.set("n","<A-l>",":SmartResizeRight<CR>")
+-- Buffer
+keymap.set("n", "<A-h>", ":SmartResizeLeft<CR>")
+keymap.set("n", "<A-l>", ":SmartResizeRight<CR>")
 -- Format
-keymap.set("n", "<leader>f", ":Format<CR>")
--- Transparent 
-keymap.set("n","tt",":TransparentToggle<CR>")
+keymap.set("n", "<leader>F", ":Format<CR>")
+-- Transparent
+keymap.set("n", "tt", ":TransparentToggle<CR>")
+
+-- Lsp Saga
+keymap.set("n", "<leader>ca", "<cmd>Lspsaga code_action<CR>")
+keymap.set("n", "<leader>rn", "<cmd>Lspsaga rename<CR>")
+keymap.set("n", "<leader>dd", "<cmd>Lspsaga show_line_diagnostics<CR>")
+keymap.set("n", "<leader>d", "<cmd>Lspsaga show_cursor_diagnostics<CR>")
+keymap.set("n", "[", "<cmd>Lspsaga diagnostic_jump_prev<CR>")
+keymap.set("n", "]", "<cmd>Lspsaga diagnostic_jump_next<CR>")
+keymap.set("n", "K", "<cmd>Lspsaga hover_doc<CR>")
+keymap.set("n", "<leader>o", "<cmd>LSoutlineToggle<CR>")
