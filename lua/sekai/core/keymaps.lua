@@ -1,18 +1,21 @@
 vim.g.mapleader = " "
 
 local keymap = vim.keymap
+local opts = { norempa = true, silent = true }
 
 --Save and quit
 keymap.set("n", "<leader>w", ":w<CR>")
 keymap.set("n", "<leader>q", ":q<CR>")
 --NvimTree
 keymap.set("n", "<leader>nt", ":NvimTreeToggle<CR>")
+
 --Telescope
 local builtin = require("telescope.builtin")
-vim.keymap.set("n", "<leader>ff", builtin.find_files, {})
-vim.keymap.set("n", "<leader>fg", builtin.live_grep, {})
-vim.keymap.set("n", "<leader>fb", builtin.buffers, {})
-vim.keymap.set("n", "<leader>fh", builtin.help_tags, {})
+keymap.set("n", "<leader>ff", builtin.find_files, {})
+keymap.set("n", "<leader>fg", builtin.live_grep, {})
+keymap.set("n", "<leader>fb", builtin.buffers, {})
+keymap.set("n", "<leader>fh", builtin.help_tags, {})
+
 -- Tabs
 keymap.set("n", "<S-c>", ":Bdelete<CR>")
 keymap.set("n", "<leader>l", ":BufferNext<CR>")
@@ -27,13 +30,3 @@ keymap.set("n", "<A-l>", ":SmartResizeRight<CR>")
 keymap.set("n", "<leader>F", ":Format<CR>")
 -- Transparent
 keymap.set("n", "tt", ":TransparentToggle<CR>")
-
--- Lsp Saga
-keymap.set("n", "<leader>ca", "<cmd>Lspsaga code_action<CR>")
-keymap.set("n", "<leader>rn", "<cmd>Lspsaga rename<CR>")
-keymap.set("n", "<leader>dd", "<cmd>Lspsaga show_line_diagnostics<CR>")
-keymap.set("n", "<leader>d", "<cmd>Lspsaga show_cursor_diagnostics<CR>")
-keymap.set("n", "[", "<cmd>Lspsaga diagnostic_jump_prev<CR>")
-keymap.set("n", "]", "<cmd>Lspsaga diagnostic_jump_next<CR>")
-keymap.set("n", "K", "<cmd>Lspsaga hover_doc<CR>")
-keymap.set("n", "<leader>o", "<cmd>LSoutlineToggle<CR>")

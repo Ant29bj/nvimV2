@@ -23,7 +23,7 @@ return require("packer").startup(function(use)
 	--Colorscheme
 	use("morhetz/gruvbox")
 	use("olimorris/onedarkpro.nvim") -- Packer
-	use("navarasu/onedark.nvim")
+	use("ray-x/aurora")
 	-- Transparent
 	use("xiyaowong/nvim-transparent")
 	--Buffer navigation
@@ -33,7 +33,7 @@ return require("packer").startup(function(use)
 	use("kyazdani42/nvim-web-devicons")
 	--Lua line
 	use("nvim-lualine/lualine.nvim")
-	--Fuzzy finde Telescope
+	--Fuzzy finder Telescope
 	use({
 		"nvim-telescope/telescope.nvim",
 		tag = "0.1.0",
@@ -78,7 +78,7 @@ return require("packer").startup(function(use)
 	use("p00f/nvim-ts-rainbow")
 	use("norcalli/nvim-colorizer.lua")
 
-  use('brenoprata10/nvim-highlight-colors')
+	use("brenoprata10/nvim-highlight-colors")
 
 	if packer_bootstrap then
 		require("packer").sync()

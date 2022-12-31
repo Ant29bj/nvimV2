@@ -79,6 +79,11 @@ _G.packer_plugins = {
     path = "/home/sekai/.local/share/nvim/site/pack/packer/start/LuaSnip",
     url = "https://github.com/L3MON4D3/LuaSnip"
   },
+  aurora = {
+    loaded = true,
+    path = "/home/sekai/.local/share/nvim/site/pack/packer/start/aurora",
+    url = "https://github.com/ray-x/aurora"
+  },
   ["barbar.nvim"] = {
     loaded = true,
     path = "/home/sekai/.local/share/nvim/site/pack/packer/start/barbar.nvim",
@@ -165,6 +170,16 @@ _G.packer_plugins = {
     path = "/home/sekai/.local/share/nvim/site/pack/packer/start/nvim-cmp",
     url = "https://github.com/hrsh7th/nvim-cmp"
   },
+  ["nvim-colorizer.lua"] = {
+    loaded = true,
+    path = "/home/sekai/.local/share/nvim/site/pack/packer/start/nvim-colorizer.lua",
+    url = "https://github.com/norcalli/nvim-colorizer.lua"
+  },
+  ["nvim-highlight-colors"] = {
+    loaded = true,
+    path = "/home/sekai/.local/share/nvim/site/pack/packer/start/nvim-highlight-colors",
+    url = "https://github.com/brenoprata10/nvim-highlight-colors"
+  },
   ["nvim-jdtls"] = {
     loaded = true,
     path = "/home/sekai/.local/share/nvim/site/pack/packer/start/nvim-jdtls",
@@ -200,10 +215,10 @@ _G.packer_plugins = {
     path = "/home/sekai/.local/share/nvim/site/pack/packer/start/nvim-web-devicons",
     url = "https://github.com/kyazdani42/nvim-web-devicons"
   },
-  ["onedark.nvim"] = {
+  ["onedarkpro.nvim"] = {
     loaded = true,
-    path = "/home/sekai/.local/share/nvim/site/pack/packer/start/onedark.nvim",
-    url = "https://github.com/navarasu/onedark.nvim"
+    path = "/home/sekai/.local/share/nvim/site/pack/packer/start/onedarkpro.nvim",
+    url = "https://github.com/olimorris/onedarkpro.nvim"
   },
   ["packer.nvim"] = {
     loaded = true,
@@ -219,6 +234,11 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/sekai/.local/share/nvim/site/pack/packer/start/prettier.nvim",
     url = "https://github.com/MunifTanjim/prettier.nvim"
+  },
+  ["smart-splits.nvim"] = {
+    loaded = true,
+    path = "/home/sekai/.local/share/nvim/site/pack/packer/start/smart-splits.nvim",
+    url = "https://github.com/mrjones2014/smart-splits.nvim"
   },
   ["telescope.nvim"] = {
     loaded = true,

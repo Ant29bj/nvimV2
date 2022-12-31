@@ -6,45 +6,38 @@ if not status then
 	return
 end
 
--- Lua
-require('onedark').setup  {
-    -- Main options --
-    style = 'dark', -- Default theme style. Choose between 'dark', 'darker', 'cool', 'deep', 'warm', 'warmer' and 'light'
-    transparent = false,  -- Show/hide background
-    term_colors = true, -- Change terminal color as per the selected theme style
-    ending_tildes = false, -- Show the end-of-buffer tildes. By default they are hidden
-    cmp_itemkind_reverse = false, -- reverse item kind highlights in cmp menu
+require("onedarkpro").setup({
+	colors = {}, -- Override default colors or create your own
+	highlights = {}, -- Override default highlight groups or create your own
+	filetypes = { -- Override which filetype highlight groups are loaded
+		-- See the 'Configuring filetype highlights' section for the available list
+	},
+	plugins = { -- Override which plugin highlight groups are loaded
+		-- See the 'Supported plugins' section for the available list
+	},
+	styles = { -- For example, to apply bold and italic, use "bold,italic"
+		types = "NONE", -- Style that is applied to types
+		numbers = "NONE", -- Style that is applied to numbers
+		strings = "NONE", -- Style that is applied to strings
+		comments = "NONE", -- Style that is applied to comments
+		keywords = "italic,bold", -- Style that is applied to keywords
+		constants = "NONE", -- Style that is applied to constants
+		functions = "NONE", -- Style that is applied to functions
+		operators = "NONE", -- Style that is applied to operators
+		variables = "NONE", -- Style that is applied to variables
+		conditionals = "NONE", -- Style that is applied to conditionals
+		virtual_text = "NONE", -- Style that is applied to virtual text
+	},
+	options = {
+		bold = true, -- Use bold styles?
+		italic = true, -- Use italic styles?
+		underline = true, -- Use underline styles? undercurl = true, -- Use undercurl styles?
 
-    -- toggle theme style ---
-    toggle_style_key = '<leader>cl', -- keybind to toggle theme style. Leave it nil to disable it, or set it to a string, for example "<leader>ts"
-    toggle_style_list = {'dark', 'darker', 'cool', 'deep', 'warm', 'warmer', 'light'}, -- List of styles to toggle between
+		cursorline = false, -- Use cursorline highlighting?
+		transparency = false, -- Use a transparent background?
+		terminal_colors = true, -- Use the theme's colors for Neovim's :terminal?
+		highlight_inactive_windows = false, -- When the window is out of focus, change the normal background?
+	},
+})
 
-    -- Change code style ---
-    -- Options are italic, bold, underline, none
-    -- You can configure multiple style with comma seperated, For e.g., keywords = 'italic,bold'
-    code_style = {
-        comments = 'italic',
-        keywords = 'italic',
-        functions = 'italic',
-        strings = 'none',
-        variables = 'none'
-    },
-
-    -- Lualine options --
-    lualine = {
-        transparent = false, -- lualine center bar transparency
-    },
-
-    -- Custom Highlights --
-    colors = {}, -- Override default colors
-    highlights = {}, -- Override highlight groups
-
-    -- Plugins Config --
-    diagnostics = {
-        darker = true, -- darker colors for diagnostic
-        undercurl = true,   -- use undercurl instead of underline for diagnostics
-        background = true,    -- use background color for virtual text
-    },
-}
-require("onedark").load()
-
+vim.cmd("colorscheme onedark_vivid")
