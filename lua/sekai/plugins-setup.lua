@@ -24,6 +24,8 @@ return require("packer").startup(function(use)
 	use("morhetz/gruvbox")
 	use("olimorris/onedarkpro.nvim") -- Packer
 	use("ray-x/aurora")
+	-- Blank spaces
+	use("lukas-reineke/indent-blankline.nvim")
 	-- Transparent
 	use("xiyaowong/nvim-transparent")
 	--Buffer navigation
@@ -77,7 +79,7 @@ return require("packer").startup(function(use)
 	use("nvim-treesitter/nvim-treesitter")
 	use("p00f/nvim-ts-rainbow")
 	use("norcalli/nvim-colorizer.lua")
-
+	-- Css colors
 	use("brenoprata10/nvim-highlight-colors")
 
 	if packer_bootstrap then

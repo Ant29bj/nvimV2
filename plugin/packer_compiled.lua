@@ -250,6 +250,11 @@ _G.packer_plugins = {
     path = "/home/sekai/.local/share/nvim/site/pack/packer/start/typescript.nvim",
     url = "https://github.com/jose-elias-alvarez/typescript.nvim"
   },
+  ["vim-sneak"] = {
+    loaded = true,
+    path = "/home/sekai/.local/share/nvim/site/pack/packer/start/vim-sneak",
+    url = "https://github.com/justinmk/vim-sneak"
+  },
   ["vim-tmux-navigator"] = {
     loaded = true,
     path = "/home/sekai/.local/share/nvim/site/pack/packer/start/vim-tmux-navigator",

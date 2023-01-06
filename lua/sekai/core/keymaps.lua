@@ -30,3 +30,4 @@ keymap.set("n", "<A-l>", ":SmartResizeRight<CR>")
 keymap.set("n", "<leader>F", ":Format<CR>")
 -- Transparent
 keymap.set("n", "tt", ":TransparentToggle<CR>")
+-- Esearch

@@ -1,4 +1,3 @@
-
 require("transparent").setup({
 	enable = true, -- boolean: enable transparent
 	extra_groups = { -- table/string: additional groups that should be cleared
@@ -16,19 +15,19 @@ require("transparent").setup({
 })
 
 require("onedark").setup({
-  style = "dark",
-  code_style = {
-    comments = "none",
-    keywords = "italic",
-    functions = "italic",
-    strings = "none",
-    variables = "none",
-  },
-  diagnostics = {
-    darker = true, -- darker colors for diagnostic
-    undercurl = true, -- use undercurl instead of underline for diagnostics
-    background = true, -- use background color for virtual text
-  },
+	style = "dark",
+	code_style = {
+		comments = "none",
+		keywords = "italic",
+		functions = "italic",
+		strings = "none",
+		variables = "italic",
+	},
+	diagnostics = {
+		darker = true, -- darker colors for diagnostic
+		undercurl = true, -- use undercurl instead of underline for diagnostics
+		background = true, -- use background color for virtual text
+	},
 })
 
 require("onedark").load()
