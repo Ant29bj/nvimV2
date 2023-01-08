@@ -268,6 +268,11 @@ _G.packer_plugins = {
     path = "/home/sekai/.local/share/nvim/site/pack/packer/start/typescript.nvim",
     url = "https://github.com/jose-elias-alvarez/typescript.nvim"
   },
+  ["vim-flutter"] = {
+    loaded = true,
+    path = "/home/sekai/.local/share/nvim/site/pack/packer/start/vim-flutter",
+    url = "https://github.com/thosakwe/vim-flutter"
+  },
   ["vim-tmux-navigator"] = {
     loaded = true,
     path = "/home/sekai/.local/share/nvim/site/pack/packer/start/vim-tmux-navigator",
