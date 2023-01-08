@@ -30,4 +30,14 @@ keymap.set("n", "<A-l>", ":SmartResizeRight<CR>")
 keymap.set("n", "<leader>F", ":Format<CR>")
 -- Transparent
 keymap.set("n", "tt", ":TransparentToggle<CR>")
--- Esearch
+
+vim.keymap.set("n", "rn", "<cmd>Lspsaga rename<CR>")
+vim.keymap.set("n", "<leader>dd", "<cmd>Lspsaga show_line_diagnostics<CR>")
+vim.keymap.set("n", "<leader>d", "<cmd>Lspsaga show_cursor_diagnostics<CR>")
+vim.keymap.set("n", "<leader>ca", "<cmd>Lspsaga code_action<CR>")
+vim.keymap.set("n", "gd", "<cmd>Lspsaga peek_definition<CR>")
+vim.keymap.set("n", "gf", "<cmd>Lspsaga lsp_finder<CR>")
+vim.keymap.set("n", "[", "<cmd>Lspsaga diagnostic_jump_prev<CR>")
+vim.keymap.set("n", "]", "<cmd>Lspsaga diagnostic_jump_next<CR>")
+vim.keymap.set("n", "K", "<cmd>Lspsaga hover_doc<CR>")
+vim.keymap.set("n", "<leader>o", "<cmd>LSoutlineToggle<CR>")

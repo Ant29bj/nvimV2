@@ -45,7 +45,6 @@ return require("packer").startup(function(use)
 	use("hrsh7th/nvim-cmp")
 	use("hrsh7th/cmp-buffer")
 	use("hrsh7th/cmp-path")
-
 	-- snippets
 	use("L3MON4D3/LuaSnip")
 	use("saadparwaiz1/cmp_luasnip")
@@ -60,13 +59,14 @@ return require("packer").startup(function(use)
 	})
 	-- aoutopairs
 	use("windwp/nvim-autopairs")
-
 	use("hrsh7th/cmp-nvim-lsp")
 	use({ "glepnir/lspsaga.nvim", branch = "main" })
 	use("jose-elias-alvarez/typescript.nvim")
 	use("onsails/lspkind.nvim")
 	use({ "mhartington/formatter.nvim" })
 	use("MunifTanjim/prettier.nvim")
+	-- Flutter
+	use("thosakwe/vim-flutter")
 	-- Java
 	use("mfussenegger/nvim-jdtls")
 	-- tabs
@@ -81,6 +81,17 @@ return require("packer").startup(function(use)
 	use("norcalli/nvim-colorizer.lua")
 	-- Css colors
 	use("brenoprata10/nvim-highlight-colors")
+	-- Func description
+	use({
+		"utilyre/barbecue.nvim",
+		requires = {
+			"smiteshp/nvim-navic",
+		},
+		after = "nvim-web-devicons",
+		config = function()
+			require("barbecue").setup()
+		end,
+	})
 
 	if packer_bootstrap then
 		require("packer").sync()
