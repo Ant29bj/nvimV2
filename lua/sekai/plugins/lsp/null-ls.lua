@@ -39,6 +39,5 @@ null_ls.setup({
 		null_ls.builtins.formatting.black,
 		null_ls.builtins.formatting.csharpier,
 		null_ls.builtins.formatting.dart_format,
-		null_ls.builtins.diagnostics.golangci_lint,
 	},
 })
