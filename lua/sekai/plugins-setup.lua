@@ -60,7 +60,13 @@ return require("packer").startup(function(use)
 	-- aoutopairs
 	use("windwp/nvim-autopairs")
 	use("hrsh7th/cmp-nvim-lsp")
-	use({ "glepnir/lspsaga.nvim", branch = "main" })
+	use({
+		"glepnir/lspsaga.nvim",
+		branch = "main",
+		config = function()
+			require("lspsaga").setup({})
+		end,
+	})
 	use("jose-elias-alvarez/typescript.nvim")
 	use("onsails/lspkind.nvim")
 	use({ "mhartington/formatter.nvim" })
