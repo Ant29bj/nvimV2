@@ -23,7 +23,6 @@ mason_lspconfig.setup({
 		"angularls",
 		"emmet_ls",
 		"jdtls",
-		"sumneko_lua",
 	},
 	automatic_installation = true,
 })
