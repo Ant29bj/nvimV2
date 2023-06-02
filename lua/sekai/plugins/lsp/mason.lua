@@ -23,6 +23,8 @@ mason_lspconfig.setup({
 		"angularls",
 		"emmet_ls",
 		"jdtls",
+		"vuels",
+		"svelt",
 	},
 	automatic_installation = true,
 })

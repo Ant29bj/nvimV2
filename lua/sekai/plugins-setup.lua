@@ -23,7 +23,23 @@ return require("packer").startup(function(use)
 	--Colorscheme
 	use("morhetz/gruvbox")
 	use("olimorris/onedarkpro.nvim") -- Packer
-	use("ray-x/aurora")
+	use({
+		"maxmx03/solarized.nvim",
+		config = function()
+			local success, solarized = pcall(require, "solarized")
+
+			vim.o.background = "dark"
+
+			solarized:setup({
+				config = {
+					theme = "neovim",
+					transparent = false,
+				},
+			})
+
+			vim.cmd("colorscheme solarized")
+		end,
+	})
 	-- Blank spaces
 	use("lukas-reineke/indent-blankline.nvim")
 	-- Transparent
