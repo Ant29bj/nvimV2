@@ -24,7 +24,6 @@ mason_lspconfig.setup({
 		"emmet_ls",
 		"jdtls",
 		"vuels",
-		"svelt",
 	},
 	automatic_installation = true,
 })
