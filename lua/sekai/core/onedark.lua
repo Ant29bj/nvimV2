@@ -1,33 +1,36 @@
-require("transparent").setup({
-	enable = true, -- boolean: enable transparent
-	extra_groups = { -- table/string: additional groups that should be cleared
-		-- In particular, when you set it to 'all', that means all available groups
-
-		-- example of akinsho/nvim-bufferline.lua
-		"BufferLineTabClose",
-		"BufferlineBufferSelected",
-		"BufferLineFill",
-		"BufferLineBackground",
-		"BufferLineSeparator",
-		"BufferLineIndicatorSelected",
+require("onedarkpro").setup({
+	colors = {}, -- Override default colors or create your own
+	highlights = {}, -- Override default highlight groups or create your own
+	filetypes = { -- Override which filetype highlight groups are loaded
+		-- See the 'Configuring filetype highlights' section for the available list
 	},
-	exclude = {}, -- table: groups you don't want to clear
+	plugins = { -- Override which plugin highlight groups are loaded
+		-- See the 'Supported plugins' section for the available list
+	},
+	styles = {
+		-- For example, to apply bold and italic, use "bold,italic"
+		types = "NONE", -- Style that is applied to types
+		numbers = "NONE", -- Style that is applied to numbers
+		strings = "NONE", -- Style that is applied to strings
+		comments = "NONE", -- Style that is applied to comments
+		keywords = "bold,bold", -- Style that is applied to keywords
+		constants = "italic", -- Style that is applied to constants
+		functions = "NONE", -- Style that is applied to functions
+		operators = "NONE", -- Style that is applied to operators
+		variables = "NONE", -- Style that is applied to variables
+		conditionals = "NONE", -- Style that is applied to conditionals
+		virtual_text = "NONE", -- Style that is applied to virtual text
+	},
+	options = {
+		bold = true, -- Use bold styles?
+		italic = true, -- Use italic styles?
+		underline = true, -- Use underline styles? undercurl = true, -- Use undercurl styles?
+
+		cursorline = true, -- Use cursorline highlighting?
+		transparency = true, -- Use a transparent background?
+		terminal_colors = true, -- Use the theme's colors for Neovim's :terminal?
+		highlight_inactive_windows = false, -- When the window is out of focus, change the normal background?
+	},
 })
 
-require("onedark").setup({
-	style = "dark",
-	code_style = {
-		comments = "none",
-		keywords = "italic",
-		functions = "italic",
-		strings = "none",
-		variables = "italic",
-	},
-	diagnostics = {
-		darker = true, -- darker colors for diagnostic
-		undercurl = true, -- use undercurl instead of underline for diagnostics
-		background = true, -- use background color for virtual text
-	},
-})
-
-require("onedark").load()
+vim.cmd("colorscheme onedark_vivid")

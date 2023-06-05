@@ -15,14 +15,15 @@ require("onedarkpro").setup({
 	plugins = { -- Override which plugin highlight groups are loaded
 		-- See the 'Supported plugins' section for the available list
 	},
-	styles = { -- For example, to apply bold and italic, use "bold,italic"
+	styles = {
+		-- For example, to apply bold and italic, use "bold,italic"
 		types = "NONE", -- Style that is applied to types
 		numbers = "NONE", -- Style that is applied to numbers
 		strings = "NONE", -- Style that is applied to strings
 		comments = "NONE", -- Style that is applied to comments
-		keywords = "bold,bold", -- Style that is applied to keywords
+		keywords = "bold,italic", -- Style that is applied to keywords
 		constants = "italic", -- Style that is applied to constants
-		functions = "NONE", -- Style that is applied to functions
+		functions = "italic", -- Style that is applied to functions
 		operators = "NONE", -- Style that is applied to operators
 		variables = "NONE", -- Style that is applied to variables
 		conditionals = "NONE", -- Style that is applied to conditionals
@@ -33,10 +34,10 @@ require("onedarkpro").setup({
 		italic = true, -- Use italic styles?
 		underline = true, -- Use underline styles? undercurl = true, -- Use undercurl styles?
 
-		cursorline = true, -- Use cursorline highlighting?
-		transparency = true, -- Use a transparent background?
+		cursorline = false, -- Use cursorline highlighting?
+		transparency = false, -- Use a transparent background?
 		terminal_colors = true, -- Use the theme's colors for Neovim's :terminal?
-		highlight_inactive_windows = false, -- When the window is out of focus, change the normal background?
+		highlight_inactive_windows = true, -- When the window is out of focus, change the normal background?
 	},
 })
 

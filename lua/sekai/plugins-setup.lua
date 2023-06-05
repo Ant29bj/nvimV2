@@ -22,28 +22,9 @@ return require("packer").startup(function(use)
 	use("wbthomason/packer.nvim")
 	--Colorscheme
 	use("morhetz/gruvbox")
-	use("olimorris/onedarkpro.nvim") -- Packer
-	use({
-		"maxmx03/solarized.nvim",
-		config = function()
-			local success, solarized = pcall(require, "solarized")
-
-			vim.o.background = "dark"
-
-			solarized:setup({
-				config = {
-					theme = "neovim",
-					transparent = false,
-				},
-			})
-
-			vim.cmd("colorscheme solarized")
-		end,
-	})
+	use("olimorris/onedarkpro.nvim")
 	-- Blank spaces
 	use("lukas-reineke/indent-blankline.nvim")
-	-- Transparent
-	use("xiyaowong/nvim-transparent")
 	--Buffer navigation
 	use("christoomey/vim-tmux-navigator")
 	--Nvim Tree an icons
