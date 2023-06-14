@@ -41,6 +41,7 @@ null_ls.setup({
 				"javascriptreact",
 				"typescript",
 				"typescriptreact",
+				"svelte",
 				"vue",
 				"css",
 				"scss",

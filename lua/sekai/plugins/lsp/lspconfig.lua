@@ -123,7 +123,7 @@ require("lspconfig").dartls.setup({})
 
 require("lspconfig").zls.setup({})
 
---require("lspconfig").svelte.setup({})
+require("lspconfig").svelte.setup({})
 
 --require("lspconfig").vuels.setup({})
 
