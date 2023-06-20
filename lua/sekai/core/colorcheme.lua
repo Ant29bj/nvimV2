@@ -42,3 +42,7 @@ require("onedarkpro").setup({
 })
 
 vim.cmd("colorscheme onedark_vivid")
+
+require("monokai").setup()
+
+vim.cmd("colorscheme monokai_soda")

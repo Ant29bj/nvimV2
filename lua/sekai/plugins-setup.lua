@@ -23,6 +23,7 @@ return require("packer").startup(function(use)
 	--Colorscheme
 	use("morhetz/gruvbox")
 	use("olimorris/onedarkpro.nvim")
+	use("tanvirtin/monokai.nvim")
 	-- Blank spaces
 	use("lukas-reineke/indent-blankline.nvim")
 	--Buffer navigation

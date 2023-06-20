@@ -64,7 +64,7 @@ cmp.setup({
 				Keyword = "Keyword",
 				Snippet = "󰅳",
 				Color = "",
-				File = "",
+				File = "",
 				Reference = "",
 				Folder = "",
 				EnumMember = "",
