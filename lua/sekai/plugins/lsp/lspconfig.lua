@@ -114,10 +114,9 @@ require("lspconfig").clangd.setup({
 	on_attach = on_attach,
 })
 
-require("lspconfig").omnisharp.setup({
-	capabilities = capabilities,
-	on_attach = on_attach,
-})
+--require("lspconfig").omnisharp.setup({})
+
+require("lspconfig").csharp_ls.setup({})
 
 require("lspconfig").dartls.setup({})
 
