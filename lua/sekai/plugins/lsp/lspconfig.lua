@@ -59,7 +59,9 @@ typescript.setup({
 
 lspconfig.tsserver.setup({
 	on_attach = on_attach,
-	capabilities,
+	filetypes = { "typescript", "typescriptreact", "typescript.tsx" },
+	cmd = { "typescript-language-server", "--stdio" },
+	capabilities = capabilities,
 })
 
 lspconfig["eslint"].setup({})
@@ -114,8 +116,6 @@ require("lspconfig").clangd.setup({
 	on_attach = on_attach,
 })
 
---require("lspconfig").omnisharp.setup({})
-
 require("lspconfig").csharp_ls.setup({})
 
 require("lspconfig").dartls.setup({})
@@ -127,24 +127,7 @@ require("lspconfig").svelte.setup({})
 --require("lspconfig").vuels.setup({})
 
 require("lspconfig").volar.setup({
-	filetypes = { "typescript", "javascript", "javascriptreact", "typescriptreact", "vue", "json" },
-})
-
-require("lspconfig").emmet_ls.setup({
-	settings = {
-		filetypes = {
-			"astro",
-			"css",
-			"eruby",
-			"html",
-			"htmldjango",
-			"less",
-			"sass",
-			"scss",
-			"svelte",
-			"vue",
-		},
-	},
+	filetypes = { "vue", "json" },
 })
 
 require("lspconfig").tailwindcss.setup({

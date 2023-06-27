@@ -74,7 +74,7 @@ return require("packer").startup(function(use)
 	-- Java
 	use("mfussenegger/nvim-jdtls")
 	-- tabs
-	use({ "romgrk/barbar.nvim", wants = "nvim-web-devicons" })
+	-- use({ "romgrk/barbar.nvim", wants = "nvim-web-devicons" })
 	-- Buffers
 	use("mrjones2014/smart-splits.nvim")
 	-- Higlights
@@ -96,7 +96,6 @@ return require("packer").startup(function(use)
 			require("barbecue").setup()
 		end,
 	})
-
 	if packer_bootstrap then
 		require("packer").sync()
 	end

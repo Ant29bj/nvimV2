@@ -26,10 +26,6 @@ keymap.set("n", "<S-c>", ":BufferDelete<CR>")
 -- Buffer
 keymap.set("n", "<A-h>", ":SmartResizeLeft<CR>")
 keymap.set("n", "<A-l>", ":SmartResizeRight<CR>")
--- Format
-keymap.set("n", "<leader>F", ":Format<CR>")
--- Transparent
-keymap.set("n", "tt", ":TransparentToggle<CR>")
 
 vim.keymap.set("n", "rn", "<cmd>Lspsaga rename<CR>")
 vim.keymap.set("n", "<leader>dd", "<cmd>Lspsaga show_line_diagnostics<CR>")
