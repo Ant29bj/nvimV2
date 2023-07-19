@@ -65,6 +65,9 @@ return require("packer").startup(function(use)
 			require("lspsaga").setup({})
 		end,
 	})
+	-- React
+	use("windwp/nvim-ts-autotag")
+
 	use("jose-elias-alvarez/typescript.nvim")
 	use("onsails/lspkind.nvim")
 	use({ "mhartington/formatter.nvim" })

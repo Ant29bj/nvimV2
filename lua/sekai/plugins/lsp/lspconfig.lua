@@ -120,11 +120,7 @@ require("lspconfig").csharp_ls.setup({})
 
 require("lspconfig").dartls.setup({})
 
-require("lspconfig").zls.setup({})
-
 require("lspconfig").svelte.setup({})
-
---require("lspconfig").vuels.setup({})
 
 require("lspconfig").volar.setup({
 	filetypes = { "vue", "json" },
@@ -180,4 +176,8 @@ require("lspconfig").tailwindcss.setup({
 		"vue",
 		"svelte",
 	},
+})
+
+require("nvim-ts-autotag").setup({
+	filetypes = { "javascriptreact", "typescriptreact", "tsx", "jsx" },
 })
